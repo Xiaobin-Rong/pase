@@ -101,19 +101,19 @@ if __name__ == "__main__":
                         help='Audio file extension (default: .wav)')
     
     parser.add_argument('--dewavlm_ckpt', type=str, default=None, 
-                        help='Path to DeWavLM.tar (if None, download from HF)')
+                        help='Path to DeWavLM.pt (if None, download from HF)')
     parser.add_argument('--vocoder_ckpt', type=str, default=None, 
-                        help='Path to Vocoder_Dual.tar (if None, download from HF)')
+                        help='Path to Vocoder_Dual.pt (if None, download from HF)')
     parser.add_argument('--download_dir', type=str, default=None,
                         help='Directory to download checkpoints (if None, use HF default cache directory)')
     
     args = parser.parse_args()
     
     resolved_dewavlm_path = get_checkpoint_path(
-        args.dewavlm_ckpt, "DeWavLM.tar", args.download_dir
+        args.dewavlm_ckpt, "DeWavLM.pt", args.download_dir
     )
     resolved_vocoder_path = get_checkpoint_path(
-        args.vocoder_ckpt, "Vocoder_Dual.tar", args.download_dir
+        args.vocoder_ckpt, "Vocoder_Dual.pt", args.download_dir
     )
 
     device = torch.device(args.device)

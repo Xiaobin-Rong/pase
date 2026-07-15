@@ -1,7 +1,7 @@
 # StuPASE: Towards Low-Hallucination and Studio-Quality Generative Speech Enhancement
 [![arxiv](https://img.shields.io/badge/arXiv-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2603.09234)
 [![demo](https://img.shields.io/badge/Demo-orange?logo=audacity&logoColor=white)](https://xiaobin-rong.github.io/stupase_demo/)
-<!-- [![models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/cisco-ai/pase) -->
+[![models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/cisco-ai/stupase)
 
 🎉 This is the official implementation of our Interspeech 2026 paper: 
 [StuPASE: Towards Low-Hallucination Studio-Quality Generative Speech Enhancement](https://arxiv.org/abs/2603.09234)
