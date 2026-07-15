@@ -7,7 +7,7 @@
 [StuPASE: Towards Low-Hallucination Studio-Quality Generative Speech Enhancement](https://arxiv.org/abs/2603.09234)
 
 ## Pretrained Checkpoints 
-Three checkpoints will be released soon:
+Three checkpoints are provided:
 - `DeWavLM-R.pt`: the semantic enhancement module
 - `CFM.pt`: the flow-matching-based acoustic enhancement module
 - `Vocoder_Mel-16k.pt`: the vocoder for reconstructing waveforms from Mel-spectrogram representations
