@@ -37,6 +37,14 @@ def get_checkpoint_path(ckpt_arg, filename, download_dir=None):
     
     print(f"[*] Downloading {filename} from Hugging Face ({REPO_ID})...")
     
+    if not os.path.exists(f"{download_dir}/config.json"):
+        hf_hub_download(
+            repo_id=REPO_ID,
+            filename="config.json",
+            local_dir=download_dir,
+            local_dir_use_symlinks=False,
+        )
+        
     path = hf_hub_download(
         repo_id=REPO_ID, 
         filename=filename, 
